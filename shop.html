@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - CaneLeaf Press</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <svg class="logo-icon" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path d="M14 2C8 2 4 6 4 10c0 3 2 5 4 6l-2 10h16l-2-10c2-1 4-3 4-6 0-4-4-8-10-8z" fill="#2D5016"/>
+                    <path d="M12 8c-2 1-3 3-3 5h2c0-1.5.8-2.8 2-3.5V8z" fill="#4A7C2E" opacity="0.6"/>
+                </svg>
+                <span>CaneLeaf Press</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Shop Hero -->
+    <section class="page-hero">
+        <h1>Shop Books</h1>
+        <p>Every purchase supports sustainable printing and forest conservation.</p>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="shop-grid-section">
+        <div class="shop-grid">
+            <div class="product-card" data-product="apes">
+                <div class="product-image">
+                    <div class="book-mockup small">
+                        <div class="book-cover green">
+                            <span class="book-label">AP</span>
+                            <h3>Environmental Science</h3>
+                            <p>Study Guide</p>
+                            <span class="book-edition">2026 Edition</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>AP Environmental Science Review Book</h3>
+                    <p class="product-price">$24.99</p>
+                    <button class="btn btn-primary btn-small" onclick="openProduct('apes')">View Options</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="bio">
+                <div class="product-image">
+                    <div class="book-mockup small">
+                        <div class="book-cover teal">
+                            <span class="book-label">AP</span>
+                            <h3>Biology</h3>
+                            <p>Study Guide</p>
+                            <span class="book-edition">2026 Edition</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>AP Biology Review Book</h3>
+                    <p class="product-price">$24.99</p>
+                    <button class="btn btn-primary btn-small" onclick="openProduct('bio')">View Options</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="chem">
+                <div class="product-image">
+                    <div class="book-mockup small">
+                        <div class="book-cover amber">
+                            <span class="book-label">AP</span>
+                            <h3>Chemistry</h3>
+                            <p>Study Guide</p>
+                            <span class="book-edition">2026 Edition</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>AP Chemistry Review Book</h3>
+                    <p class="product-price">$24.99</p>
+                    <button class="btn btn-primary btn-small" onclick="openProduct('chem')">View Options</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Product Section -->
+    <section class="product-detail-section" id="product-detail">
+        <div class="product-detail">
+            <div class="detail-image">
+                <div class="book-mockup large">
+                    <div class="book-cover green">
+                        <span class="book-label">AP</span>
+                        <h3>Environmental Science</h3>
+                        <p>Study Guide</p>
+                        <span class="book-edition">2026 Edition</span>
+                    </div>
+                    <div class="book-spine"></div>
+                </div>
+            </div>
+            <div class="detail-options">
+                <h2>AP Environmental Science Review Book</h2>
+                <p class="detail-price">$24.99</p>
+
+                <!-- Paper Type -->
+                <div class="option-group">
+                    <label>Paper Type</label>
+                    <div class="radio-options">
+                        <label class="radio-option">
+                            <input type="radio" name="paper" value="tree">
+                            <div class="radio-content">
+                                <strong>Tree-Based Paper</strong>
+                                <span>Traditional wood pulp. Standard option.</span>
+                            </div>
+                        </label>
+                        <label class="radio-option selected">
+                            <input type="radio" name="paper" value="sugarcane" checked>
+                            <div class="radio-content">
+                                <strong>Sugarcane Bagasse Paper</strong>
+                                <span class="recommended-badge">Recommended</span>
+                                <span>70% bagasse, 30% recycled pulp. Saves trees and stores carbon.</span>
+                            </div>
+                        </label>
+                        <label class="radio-option disabled">
+                            <input type="radio" name="paper" value="bamboo" disabled>
+                            <div class="radio-content">
+                                <strong>Bamboo Paper</strong>
+                                <span class="sold-out-badge">Sold Out</span>
+                                <span>Bamboo requires dedicated land to grow. Our cane fiber paper instead uses existing agricultural waste.</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Cover Durability -->
+                <div class="option-group">
+                    <label>Cover Durability</label>
+                    <div class="radio-options">
+                        <label class="radio-option selected">
+                            <input type="radio" name="cover" value="standard" checked>
+                            <div class="radio-content">
+                                <strong>Standard Paper Cover</strong>
+                                <span>Quality matte finish cover.</span>
+                            </div>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="cover" value="library">
+                            <div class="radio-content">
+                                <strong>Long-Haul Library Cover</strong>
+                                <span>Uses recycled PET lamination from water bottles. Protects the book for 10-15 years.</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Ink Type -->
+                <div class="option-group">
+                    <label>Ink Type</label>
+                    <div class="radio-options">
+                        <label class="radio-option selected always-selected">
+                            <input type="radio" name="ink" value="soy" checked disabled>
+                            <div class="radio-content">
+                                <strong>Ultra Low VOC Soy Ink</strong>
+                                <span class="eco-badge">Always Included</span>
+                                <span>Soy-based pigments release fewer volatile organic compounds and improve recyclability.</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-large add-to-cart">Add to Cart</button>
+                <p class="cart-note">Free shipping on orders over $35</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>CaneLeaf Press</h3>
+                <p>Printed with bagasse fiber and soy-based inks to reduce deforestation and carbon emissions.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="sustainability.html">Sustainability</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Learn More</h4>
+                    <ul>
+                        <li><a href="sustainability.html#forest">Forest Conservation</a></li>
+                        <li><a href="sustainability.html#carbon">Carbon Sequestration</a></li>
+                        <li><a href="technology.html#materials">Our Materials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>CaneLeaf Press. Print Knowledge. Preserve Forests.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
