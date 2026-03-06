@@ -83,20 +83,6 @@ function animateCounter(element, target) {
     requestAnimationFrame(update);
 }
 
-// ===== HORIZONTAL SCROLL (scroll-driven on desktop) =====
-const horizontalSection = document.querySelector('.horizontal-section');
-const horizontalTrack = document.querySelector('.horizontal-track');
-
-if (horizontalSection && horizontalTrack && window.innerWidth > 768) {
-    // Enable horizontal scroll via mouse wheel on the track
-    horizontalTrack.addEventListener('wheel', (e) => {
-        if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-            e.preventDefault();
-            horizontalTrack.scrollLeft += e.deltaY;
-        }
-    }, { passive: false });
-}
-
 // ===== RADIO OPTION SELECTION (Shop page) =====
 document.querySelectorAll('.radio-options').forEach(group => {
     const options = group.querySelectorAll('.radio-option:not(.disabled):not(.always-selected)');
