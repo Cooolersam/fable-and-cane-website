@@ -111,6 +111,15 @@ document.querySelectorAll('.option-buttons').forEach(group => {
 function openProduct(productId) {
     const detail = document.getElementById('product-detail');
     if (detail) {
+        const titles = {
+            apes: 'AP Environmental Science Review Book',
+            bio: 'AP Biology Review Book',
+            chem: 'AP Chemistry Review Book'
+        };
+        const heading = detail.querySelector('.detail-options h2');
+        if (heading && titles[productId]) {
+            heading.textContent = titles[productId];
+        }
         detail.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }

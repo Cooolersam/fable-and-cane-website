@@ -26,7 +26,6 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="science.html">The Science</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </div>
@@ -40,7 +39,7 @@
             <p class="hero-subtitle">Our books are printed using sugarcane bagasse, recycled fibers, and soy-based inks to reduce deforestation and store carbon for decades.</p>
             <div class="hero-buttons">
                 <a href="shop.html" class="btn btn-primary">Shop Books</a>
-                <a href="science.html" class="btn btn-secondary">How It Works</a>
+                <a href="#comparison" class="btn btn-secondary">How It Works</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -144,51 +143,68 @@
         </div>
     </section>
 
-    <!-- Product Preview Section -->
-    <section class="product-preview">
-        <h2>Featured Book</h2>
-        <div class="preview-container">
-            <div class="preview-image">
-                <div class="book-mockup">
-                    <div class="book-cover">
-                        <span class="book-label">AP</span>
-                        <h3>Environmental Science</h3>
-                        <p>Study Guide</p>
-                        <span class="book-edition">2026 Edition</span>
+    <!-- Traditional vs. FiberCane Comparison -->
+    <section class="content-section" id="comparison">
+        <div class="comparison-container">
+            <h2>Traditional Books vs. Fable and Cane</h2>
+            <p class="comparison-subtitle">Our product reimagines every part of the book — here's how it stacks up.</p>
+            <div class="comparison-grid">
+                <div class="comparison-column traditional">
+                    <h3>Traditional Publishing</h3>
+                    <div class="comparison-item negative">
+                        <h4>Environmental</h4>
+                        <ul>
+                            <li>Relies on <strong>virgin wood pulp</strong> from harvested forests</li>
+                            <li>Contributes to <strong>deforestation</strong> of 4 billion trees/year globally</li>
+                            <li>Petroleum-based inks release <strong>volatile organic compounds (VOCs)</strong> into the atmosphere</li>
+                            <li>Plastic lamination is made from <strong>new fossil fuel-derived materials</strong></li>
+                        </ul>
                     </div>
-                    <div class="book-spine"></div>
-                </div>
-            </div>
-            <div class="preview-details">
-                <span class="preview-tag">New Release</span>
-                <h3>AP Environmental Science Study Guide</h3>
-                <p class="preview-price">$24.99</p>
-                <p class="preview-desc">Comprehensive review for the AP Environmental Science exam. Printed on FiberCane paper with soy-based inks.</p>
-
-                <div class="option-group">
-                    <label>Paper Type</label>
-                    <div class="option-buttons">
-                        <button class="option-btn">Tree-Based Paper</button>
-                        <button class="option-btn selected">FiberCane Paper
-                            <span class="option-badge">Recommended</span>
-                        </button>
-                        <button class="option-btn disabled">Bamboo Paper
-                            <span class="option-badge sold-out">Sold Out</span>
-                        </button>
+                    <div class="comparison-item negative">
+                        <h4>Economic</h4>
+                        <ul>
+                            <li>Paper costs tied to <strong>volatile timber markets</strong></li>
+                            <li>Logging operations often in <strong>remote, high-cost areas</strong></li>
+                            <li>Bagasse waste from sugar production is <strong>burned or sent to landfill</strong> — zero economic value captured</li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="option-group">
-                    <label>Binding</label>
-                    <div class="option-buttons">
-                        <button class="option-btn">Standard</button>
-                        <button class="option-btn selected">Library Durability
-                            <span class="tooltip-trigger" data-tooltip="Uses recycled PET lamination from water bottles for 10-15 year protection">?</span>
-                        </button>
+                    <div class="comparison-item negative">
+                        <h4>Ethical</h4>
+                        <ul>
+                            <li>Logging displaces <strong>indigenous communities and wildlife habitats</strong></li>
+                            <li>Petroleum ink production exposes workers to <strong>harmful chemical fumes</strong></li>
+                            <li>Single-use plastic covers contribute to <strong>ocean and landfill pollution</strong></li>
+                        </ul>
                     </div>
                 </div>
-
-                <a href="shop.html" class="btn btn-primary btn-large">Shop Now</a>
+                <div class="comparison-column fibercane">
+                    <h3>Fable and Cane</h3>
+                    <div class="comparison-item positive">
+                        <h4>Environmental</h4>
+                        <ul>
+                            <li>70% <strong>sugarcane bagasse</strong> (agricultural waste) + 30% recycled pulp — <strong>zero trees cut</strong></li>
+                            <li>Sugarcane captures <strong>22 tons of CO2 per hectare/year</strong> via C4 photosynthesis; carbon stays locked in the book for decades</li>
+                            <li>Soy-based inks produce <strong>dramatically fewer VOCs</strong> and are easier to de-ink for recycling</li>
+                            <li>Covers use <strong>rPET lamination from recycled water bottles</strong>, diverting plastic from landfills</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-item positive">
+                        <h4>Economic</h4>
+                        <ul>
+                            <li>Sugarcane farmers earn <strong>dual revenue</strong> — selling sugar and fiber from the same harvest</li>
+                            <li>Converts a waste stream into a <strong>valuable raw material</strong>, creating new rural jobs</li>
+                            <li>Same retail price as traditional books — <strong>sustainability at no extra cost</strong> to the consumer</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-item positive">
+                        <h4>Ethical</h4>
+                        <ul>
+                            <li><strong>No deforestation</strong> means forests remain intact as habitats for biodiversity and indigenous communities</li>
+                            <li>Soy ink is <strong>safer for print workers</strong> — fewer toxic fumes in production facilities</li>
+                            <li>Every component is <strong>designed for end-of-life recycling</strong> through high-heat delamination — nothing goes to waste</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -224,7 +240,6 @@
                     <h4>Pages</h4>
                     <ul>
                         <li><a href="shop.html">Shop</a></li>
-                        <li><a href="science.html">The Science</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
